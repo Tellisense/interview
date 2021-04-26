@@ -92,7 +92,7 @@ const HashTable = items => {
 //using new MAP Data structure
 
 // SORTING: MERGE SORT
-function MergeSort(arr) {
+function mergeSort(arr) {
   if (arr.length === 1) {
     return arr;
   }
@@ -215,6 +215,7 @@ function slowFib(n) {
   }
   return fib(n - 1) + fib(n - 2);
 }
+
 const fib = memoize(slowFib);
 
 //sum of ordered set of numbers
@@ -307,7 +308,7 @@ function sockMerchant(n, ar) {
     if (!obj[ar[i]]) {
       obj[ar[i]] = 1;
     } else {
-      obj[ar[i]]++;
+      obj[ar[i]] += 1;
     }
   }
 
